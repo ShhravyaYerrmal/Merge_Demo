@@ -1,0 +1,53 @@
+
+
+import java.util.Scanner; 
+
+public class LuckyNumber {
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("resource")
+		Scanner s=new Scanner(System.in);
+
+		System.out.println("Enter your number: ");
+
+		int n=s.nextInt();
+		int b = n;
+
+		int a =0;
+
+		for (@SuppressWarnings("unused")
+		int i=0;n>0;i++)
+
+		{
+
+		int c=n%10;
+
+		a = a +c*c;
+
+		n=n/100;
+
+		}
+
+		if(a%9==0)
+
+		{
+
+		System.out.println(b+" is the lucky number");
+
+		}
+
+		else
+
+		{
+
+		System.out.println(b+" is not the lucky number");
+
+		}
+
+
+		
+		
+		
+	}
+
+}
